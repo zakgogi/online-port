@@ -1,0 +1,22 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem !important;
+}
+
+h3 {
+  color: white;
+}
+
+#page {
+  margin-top: 30%;
+}
+
+#col2 {
+  height: 80px;
+}

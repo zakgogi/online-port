@@ -4,18 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Page 2</title>
-</head>
-<header>
-    <ul id="navbar">
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "Page-1.html">Page 1</a></li>
-        <li><a href = "Page-2.html" class = "active">Page 2</a></li>
-    </ul>
-    <h1>Page 2</h1>
-</header>
-<body>
+    <link rel="stylesheet" href="Page-2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Projects</title>
     
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class = "navbar-nav">
+            <li class="nav-item active">
+                <a class ="nav-link" href = "home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class ="nav-link" href = "Page-1.html" class = "active">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class ="nav-link" href = "Page-2.html">Projects</a>
+            </li>
+        </ul>       
+    </nav>
+    <main class="container text-center">
+        <nav class="mb-5">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a>
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" width="60" height="60" alt="Javascript Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a>
+                        <img src="https://www.svgrepo.com/show/303157/react-logo.svg" width="60" height="60" alt="Javascript Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a>
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/python-3628999-3030224.png" width="60" height="60" alt="Javascript Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a>
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/sql-file-13-605359.png" width="60" height="60" alt="Javascript Logo">
+                    </a>
+                </li>
+            </ul>    
+        </nav>
+        <h1 class="animate__animated animate__fadeInUp">Projects</h1>
+        <h2 class="mt-5 animate__animated animate__fadeInUp">JavaScript</h2>
+        <h3 class="mt-5 animate__animated animate__fadeInUp">Journalism Website</h3>
+        <p class="mt-4 animate__animated animate__fadeInUp">
+            Loading...
+        </p>
+        <h3 class="mt-5 animate__animated animate__fadeInUp">Booking System for local field</h3>
+        <p class="mt-4 animate__animated animate__fadeInUp">
+            Created a booking system for a local field, using the Materialize framework and Google Suite to create a form that's integrated with a Google calendar and Google sheets 'database'. The form has complete validation, checking whether there is already a booking on a specific date and pitch before populating available times. Customer information is autofilled from the Google Sheets database. The user is able to add multiple pitches onto one booking, as well as press a repeat button to repeat a given booking across multiple weeks. 
+        </p>
+        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/bookingscreenshot.png" width=100%>
+        <h3 class="mt-5 animate__animated animate__fadeInUp">Snake Game</h3>
+        <p class="mt-4 animate__animated animate__fadeInUp">
+            Created the classic snake game in a web application using HTML canvas. I also used local storage to record a users high score. 
+        </p>
+        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/snake screenshot.png">
+    </main>
+
+    
+
 </body>
 </html>
