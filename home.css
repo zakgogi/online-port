@@ -1,16 +1,20 @@
+/* body {
+  background-color: rgba(54, 54, 54, 0.884) !important;
+} */
+
 body {
-  background-image: url(https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background-image: url(https://images.pexels.com/photos/3214110/pexels-photo-3214110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+h1,
+h3 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
-  color: white;
   font-size: 4rem !important;
-}
-
-h3 {
-  color: white;
 }
 
 #page {
@@ -19,4 +23,56 @@ h3 {
 
 #col2 {
   height: 80px;
+}
+
+.bubble {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 64%;
+  height: 100%;
+  width: 36%;
+}
+
+.bubble1 {
+  display: flex;
+  position: absolute;
+  bottom: -105px;
+  height: 100px;
+  width: 100px;
+}
+
+.bubble2 {
+  position: absolute;
+  bottom: -165px;
+  height: 160px;
+  width: 160px;
+}
+
+.bubble3 {
+  position: absolute;
+  bottom: -55px;
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+.stream1 {
+  left: 15%;
+}
+
+.stream2 {
+  left: 30%;
+}
+
+.stream3 {
+  left: 45%;
+}
+
+.stream4 {
+  left: 60%;
+}
+
+.stream5 {
+  left: 75%;
 }
