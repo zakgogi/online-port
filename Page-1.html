@@ -12,7 +12,9 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="page-1.js"></script>
+    
     <title>About Me</title>
     
 </head>
@@ -31,17 +33,32 @@
         </ul>       
     </nav>
     <main class="container text-center">
-        <h1 class="animate__animated animate__fadeInUp">About Me</h1>
-        <!-- <img src="/Assets/"> -->
-        <p class="mt-5 animate__animated animate__fadeInUp">
-            My name is Zak Gogi and I am a Maths graduate from the University of Leeds, and I'm currently a Futureproof Trainee Developer. As a Mathematics student I am an excellent problem solver, have good numerical skills, am able to communicate ideas clearly and am a quick learner. I have experience through my degree using Python, and on my own time I’ve learned and used Javascript and HTML/CSS on professional projects. I also worked for a while at a tech company called Beauhurst, using their backend software to identify and create profiles for high-growth UK companies. 
-        </p>
-        <p class="mt-5 animate__animated animate__fadeInUp">
-            In my spare time I’m currently actively investing in the American small cap market, and have tried my hand at both intraday trading and long term investing. I’ve attended the CogX convention as a volunteer, and specifically attended talks on blockchain which I have an interest in. I've also worked on a few personal code related projects throughout lockdown, from an endless runner game using unity, built with a c++ engine, to creating a basic python chatbot, to using an API and pythons pandas library to create an equal weighted version of the S&P 500. 
-        </p>
+        <div id="paraTop">
+            <h4>A General Bit About Me..</h4>
+            <p> My name is Zak Gogi and I am a Maths graduate from the University of Leeds, and I'm currently a Futureproof Trainee Developer. As a Mathematics student I am an excellent problem solver, have good numerical skills, am able to communicate ideas clearly and am a quick learner. I have experience through my degree using Python, and on my own time I’ve learned and used Javascript and HTML/CSS on professional projects. I also worked for a while at a tech company called Beauhurst, using their backend software to identify and create profiles for high-growth UK companies. </p>
+        </div>
+        <div id="paraLeft">
+            <h4>My Interests</h4>
+            <p>In my spare time I’m currently actively investing in the American small cap market, and have tried my hand at both intraday trading and long term investing. I’ve attended the CogX convention as a volunteer, and specifically attended talks on blockchain which I have an interest in. I've also worked on a few personal code related projects throughout lockdown, from an endless runner game using unity, built with a c++ engine, to creating a basic python chatbot, to using an API and pythons pandas library to create an equal weighted version of the S&P 500. </p>
+        </div>
+        <div id="paraRight">
+            <h4>My Interests</h4>
+            <p>In my spare time I’m currently actively investing in the American small cap market, and have tried my hand at both intraday trading and long term investing. I’ve attended the CogX convention as a volunteer, and specifically attended talks on blockchain which I have an interest in. I've also worked on a few personal code related projects throughout lockdown, from an endless runner game using unity, built with a c++ engine, to creating a basic python chatbot, to using an API and pythons pandas library to create an equal weighted version of the S&P 500. </p>
+        </div>
+        <div id="centralPerson">
+            <img id="personImg" src="./Assets/avatarNoEyes.png">
+            <div class="eyes">
+                <div id="eyeLeft">
+                    <img id="eyeballLeft" src="./Assets/Lifesavers - Eye.png">
+                </div>
+                <div id="eyeRight">
+                    <img id="eyeballRight" src="./Assets/Lifesavers - Eye.png">
+                </div>
+            </div>
+        </div>
     </main>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
 </body>
 </html>
