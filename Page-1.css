@@ -84,6 +84,9 @@ h4 {
 }
 
 @media only screen and (max-width: 1030px) {
+  #centralPerson {
+    top: 50%;
+  }
   #personImg {
     transform: scale(1);
   }
