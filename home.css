@@ -12,27 +12,26 @@ h1,
 h3 {
   color: white;
   font-family: "Ubuntu", sans-serif;
+  text-align: center;
 }
 
 h1 {
   font-size: 4rem !important;
 }
 
-#page {
-  margin-top: 30%;
-}
-
-#col2 {
-  height: 80px;
+#name {
+  position: absolute;
+  left: 20%;
+  top: 35%;
 }
 
 .bubble {
   overflow: hidden;
   position: absolute;
   top: 0px;
-  left: 64%;
+  left: 60%;
   height: 100%;
-  width: 36%;
+  width: 40%;
 }
 
 .bubble1 {
