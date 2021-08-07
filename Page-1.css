@@ -30,7 +30,6 @@ h4 {
   position: absolute;
   top: 35%;
   left: 40%;
-  border: 1px solid black;
   text-align: center;
 }
 
@@ -70,4 +69,36 @@ h4 {
   position: relative;
   height: 40px;
   width: 40px;
+}
+
+@media only screen and (max-width: 1390px) {
+  #centralPerson {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #paraRight {
+    left: 75%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #personImg {
+    transform: scale(1);
+  }
+  #eyeLeft {
+    position: absolute;
+    top: 46%;
+    left: 45%;
+    height: 30px;
+    width: 30px;
+  }
+  #eyeRight {
+    position: absolute;
+    top: 46%;
+    left: 71%;
+    height: 30px;
+    width: 30px;
+  }
 }
