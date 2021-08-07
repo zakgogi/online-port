@@ -1,4 +1,73 @@
 h1,
-p {
-  font-family: "Roboto Mono", monospage;
+p,
+h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h4 {
+  font-weight: 600 !important;
+}
+
+#paraTop {
+  margin-top: 5%;
+}
+
+#paraLeft {
+  position: absolute;
+  margin-top: 5%;
+  left: 10%;
+  width: 20%;
+}
+
+#paraRight {
+  position: absolute;
+  margin-top: 5%;
+  left: 68%;
+  width: 20%;
+}
+
+#centralPerson {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#personImg {
+  transform: scale(1.2);
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eyeLeft {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+#eyeballLeft {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+#eyeRight {
+  position: absolute;
+  top: 46%;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+}
+
+#eyeballRight {
+  position: relative;
+  height: 40px;
+  width: 40px;
 }
