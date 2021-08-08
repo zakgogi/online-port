@@ -2,8 +2,9 @@
 gsap.from('nav', {opacity: 0, duration: 1, y: -100})
 
 //Title Animation
-gsap.from('.fadeInFirst', {opacity: 0, duration: 2, y: 100, delay: 1}); 
+gsap.from('.fadeInFirst', {opacity: 0, duration: 2, y: 100, delay: 1});
 gsap.from('.fadeInSecond', {opacity: 0, duration: 2, x: -100, delay: 3});
+gsap.from('.fadeInThird', {opacity: 0, duration: 2, x: -100, delay: 5})
 
 //Bubble Animation
 const pixels = window.innerHeight;

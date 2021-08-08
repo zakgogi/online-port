@@ -83,25 +83,25 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1150px) {
   #centralPerson {
-    top: 50%;
+    top: 45%;
+    left: 37%;
   }
-  #personImg {
-    transform: scale(1);
+}
+
+@media only screen and (max-width: 960px) {
+  #centralPerson {
+    display: none;
   }
-  #eyeLeft {
-    position: absolute;
-    top: 46%;
-    left: 45%;
-    height: 30px;
-    width: 30px;
+  #paraLeft {
+    position: static;
+    text-align: center;
+    width: 100%;
   }
-  #eyeRight {
-    position: absolute;
-    top: 46%;
-    left: 71%;
-    height: 30px;
-    width: 30px;
+  #paraRight {
+    position: static;
+    width: 100%;
+    text-align: center;
   }
 }

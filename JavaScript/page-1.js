@@ -29,3 +29,6 @@ gsap.from('nav', {opacity: 0, duration: 1, y: -100});
 gsap.from('#paraTop', {opacity: 0, duration: 1, y: -100, delay: 1});
 gsap.from('#paraLeft', {opacity: 0, duration: 1, x: -100, delay: 2}); 
 gsap.from('#paraRight', {opacity: 0, duration: 1, x: 100, delay: 3});  
+
+//Person Animation
+gsap.from('#centralPerson', {opacity: 0, duration: 1, y: 100, delay: 4});

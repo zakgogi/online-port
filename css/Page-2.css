@@ -1,0 +1,82 @@
+h1,
+p,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#modal {
+  z-index: 999;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 4%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+#modal img {
+  padding: 10px;
+  height: 600px;
+  width: 80%;
+}
+
+#modal h3 {
+  padding: 5px;
+}
+
+#modal #closeModal {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: -1%;
+}
+
+#modal #closeModal:hover {
+  background: rgb(124, 126, 124);
+}
+
+.projectBubble {
+  margin-top: 5%;
+  width: 30vh;
+  height: 30vh;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4%;
+  overflow: hidden;
+}
+
+.projectBubble img {
+  height: 100%;
+  width: 100%;
+}
+
+.project {
+  width: 30vh;
+  margin-top: 5%;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+@media only screen and (max-width: 960px) {
+  #centralPerson {
+    display: none;
+  }
+  #paraLeft {
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+  #paraRight {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+}
