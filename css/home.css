@@ -78,7 +78,7 @@ h1 {
   left: 75%;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   h1 {
     font-size: 3rem !important;
   }

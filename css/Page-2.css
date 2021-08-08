@@ -64,19 +64,3 @@ h3 {
   display: inline-block;
   margin-right: 2%;
 }
-
-@media only screen and (max-width: 960px) {
-  #centralPerson {
-    display: none;
-  }
-  #paraLeft {
-    position: static;
-    text-align: center;
-    width: 100%;
-  }
-  #paraRight {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-}
