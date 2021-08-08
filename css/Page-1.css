@@ -90,7 +90,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   #centralPerson {
     display: none;
   }
