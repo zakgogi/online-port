@@ -119,3 +119,13 @@ button {
   height: 40px;
   width: 40px;
 }
+
+@media only screen and (max-width: 1000px) {
+  #modal {
+    top: 60%;
+  }
+
+  #modal img {
+    max-height: 70vh;
+  }
+}
