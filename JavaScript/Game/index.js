@@ -9,6 +9,7 @@ modalReplayBtn.addEventListener('click', () => {
 });
 let player;
 let project;
+let scoreboard;
 let projectNumber = 6;
 let speed = 15;
 
@@ -22,25 +23,27 @@ const drawGame = () => {
     }
     // project = new Project();
     player = new Player();
+    scoreboard = new Scoreboard();
     // project.assign();
     
     const gameLoop = window.setInterval(() => {
         
         ctx.clearRect(0, 0 , canvas.width, canvas.height);
-
+        scoreboard.display();
         player.display();
         for (let i = 0; i < projectSet.length; i++){
             projectSet[i].display();
             projectSet[i].update();
             if (projectSet[i].y > (canvas.height - projectSet[i].size)){
                 projectSet[i].assign();
+                scoreboard.update();
             }
             if (checkCollision(player, projectSet[i])){
                 let collidedImg = projectSet[i].img;
                 ctx.clearRect(0, 0 , canvas.width, canvas.height);
                 projectSet = [];
                 window.clearInterval(gameLoop);
-                displayModal(collidedImg);
+                displayModal(collidedImg, scoreboard.score);
                 
             }
 
@@ -65,16 +68,27 @@ const checkCollision = (player, project) => {
     return false;
 }
 
-const displayModal = (word) => {
+const displayModal = (word, score) => {
     let modal = document.getElementById('gameModal');
     modal.style.display = "block";
-    let existingH3 = document.querySelector('#gameModal h3');
-    if (existingH3){
-        existingH3.textContent = `You got hit by the ${word} project..`
+    let existingH3 = document.querySelectorAll('#gameModal h3');
+    if (existingH3.length === 2){
+        existingH3[0].textContent = `You scored ${score}.`
+        existingH3[1].textContent = `You got hit by the ${word} project..`
     } else {
-        let h3 = document.createElement('h3');
-        h3.textContent = `You got hit by the ${word} project..`
-        modal.append(h3);
+        let h31 = document.createElement('h3');
+        let h32 = document.createElement('h3');
+        h31.textContent = `You scored ${score}.`;
+        h32.textContent = `You got hit by the ${word} project..`;
+        modal.append(h31);
+        modal.append(h32);
+    }
+    let existingButton = document.querySelector('#gameModal #showProject');
+    if (!existingButton){
+        let button = document.createElement('button');
+        button.textContent = "Check it out here";
+        button.id = "showProject"
+        modal.append(button);
     }
 }
 

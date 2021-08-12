@@ -8,7 +8,7 @@ toggleGameButton.addEventListener('click', () => {
     if (window.innerHeight*1.1 > width){
         height = width;
     } else {
-        height = width;
+        height = height*0.6;
     }
     canvas.height = height;
     canvas.width = width;
