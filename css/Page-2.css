@@ -104,6 +104,7 @@ button {
 #game {
   margin-top: 2%;
   border: 3px solid black;
+  background-color: rgba(236, 241, 243, 0.87);
 }
 
 #toggleButton {
