@@ -105,3 +105,9 @@ h4 {
     text-align: center;
   }
 }
+
+@media only screen and (max-height: 805px) {
+  #centralPerson {
+    top: 50%;
+  }
+}

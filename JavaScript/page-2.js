@@ -5,6 +5,7 @@ toggleGameButton.addEventListener('click', () => {
     let canvas = document.getElementById('game');
     let width = Math.floor(window.innerWidth*0.42);
     let height = window.innerHeight;
+    console.log(window.innerHeight)
     if (window.innerHeight*1.1 > width){
         height = width;
     } else {
@@ -61,6 +62,8 @@ function toggleModalOff(){
 }
 
 function fillModal(project){
+    let modal = document.getElementById('modal');
+    let modalInfoSection = document.getElementById('modalInfo');
     modalInfoSection.innerHTML = "";
     let h3 = document.createElement('h3');
     let para = document.createElement('p');

@@ -2,6 +2,13 @@ button {
   border-radius: 5%;
 }
 
+button:hover {
+  background-color: gray;
+}
+
+/* #mainSection {
+} */
+
 h1,
 p,
 h3,
@@ -49,6 +56,9 @@ button {
   background: rgb(124, 126, 124);
 }
 
+#mainSection {
+  margin: auto;
+}
 /* .projectBubble {
   margin-top: 5%;
   width: 30vh;
@@ -88,16 +98,18 @@ button {
 
 #gameModal {
   position: absolute;
-  top: 45%;
+  top: 40%;
   display: none;
   text-align: center;
 }
 
 #gameModal h1 {
   color: red;
+  font-size: 2vw;
 }
 
 #gameModal h3 {
+  font-size: 1.3vw;
   margin-top: 2%;
 }
 
@@ -118,5 +130,5 @@ button {
 
 #start {
   position: absolute;
-  top: 45%;
+  top: 40%;
 }

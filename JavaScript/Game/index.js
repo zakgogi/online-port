@@ -84,10 +84,22 @@ const displayModal = (word, score) => {
         modal.append(h32);
     }
     let existingButton = document.querySelector('#gameModal #showProject');
-    if (!existingButton){
+    if (existingButton){
+        existingButton.remove();
         let button = document.createElement('button');
         button.textContent = "Check it out here";
         button.id = "showProject"
+        button.addEventListener('click', () => {
+            fillModal(word)
+        })
+        modal.append(button);
+    } else {
+        let button = document.createElement('button');
+        button.textContent = "Check it out here";
+        button.id = "showProject"
+        button.addEventListener('click', () => {
+            fillModal(word)
+        })
         modal.append(button);
     }
 }
