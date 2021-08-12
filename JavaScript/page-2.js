@@ -1,3 +1,13 @@
+let revealGameButton = document.getElementById('revealCanvas');
+revealGameButton.addEventListener('click', () => {
+    let main = document.getElementById('mainSection')
+    main.style.display = "none";
+    let game = document.getElementById('gameSection');
+    game.style.display = "block"
+    
+})
+
+
 let bookingBubble = document.getElementById('bookingImg');
 let journalismBubble = document.getElementById('journalismImg');
 let snakeBubble = document.getElementById('snakeImg');

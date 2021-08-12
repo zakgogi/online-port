@@ -74,3 +74,24 @@ h3 {
   margin-left: 10%;
   margin-top: 30px;
 }
+
+.ctxImg {
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+
+#gameModal {
+  position: absolute;
+  top: 40vh;
+  left: 30vw;
+  display: none;
+}
+
+#gameModal h1 {
+  color: red;
+}
+
+#gameSection {
+  display: none;
+}

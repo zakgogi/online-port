@@ -4,10 +4,11 @@ class Project {
         this.y = 80;
         this.img = "";
         this.fallSpeed = 10;
+        this.size = Math.floor(canvas.width/10);
     }
     
     assign(){
-        let randX = Math.floor(Math.random() * 720);
+        let randX = Math.floor(Math.random() * (canvas.width - this.size));
         let randY = Math.floor(Math.random() * 160 + 100);
         let randSpeed = Math.floor(Math.random() * 10 + 4);
         let imgArr = ['habit','snake','bookingSystem', 'journalism', 'sudoku'];
@@ -20,7 +21,7 @@ class Project {
 
     display(){
         let image = document.getElementById(this.img);
-        ctx.drawImage(image, this.x, this.y, 80, 80)
+        ctx.drawImage(image, this.x, this.y, this.size, this.size)
     }
 
     update(){

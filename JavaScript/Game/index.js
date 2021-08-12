@@ -1,8 +1,11 @@
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
+
 let modalReplayBtn = document.getElementById('restartBtn');
 modalReplayBtn.addEventListener('click', () => {
-    window.location.reload();
+    let modal = document.getElementById('gameModal');
+    modal.style.display = "none";
+    drawGame();
 });
 let player;
 let project;
@@ -25,7 +28,7 @@ const drawGame = () => {
     const gameLoop = window.setInterval(() => {
         
         ctx.clearRect(0, 0 , canvas.width, canvas.height);
-        // project.display();
+
         player.display();
         for (let i = 0; i < projectSet.length; i++){
             projectSet[i].display();
@@ -34,15 +37,15 @@ const drawGame = () => {
                 projectSet[i].assign();
             }
             if (checkCollision(player, projectSet[i])){
+                let collidedImg = projectSet[i].img;
                 ctx.clearRect(0, 0 , canvas.width, canvas.height);
                 projectSet = [];
-                displayModal()
+                window.clearInterval(gameLoop);
+                displayModal(collidedImg);
                 
             }
 
         }
-        
-        // checkCollision();
 
 
     }, 1000/speed)
@@ -63,10 +66,19 @@ const checkCollision = (player, project) => {
     return false;
 }
 
+const displayModal = (word) => {
+    let modal = document.getElementById('gameModal');
+    modal.style.display = "block";
+    console.log(word);
+}
+
+
 window.addEventListener('keydown', (e) => {
     let direction = e.key.replace('Arrow', '');
     console.log(direction);
     player.update(direction);
 })
 
-drawGame();
+// drawGame();
+const startButton = document.getElementById('gameStart');
+startButton.addEventListener('click', drawGame);

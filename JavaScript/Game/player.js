@@ -1,6 +1,9 @@
 class Player {
     constructor(){ 
+        this.width = Math.floor(canvas.width/7);
+        this.height = this.width * 1.7;
         this.x = 0;
+        this.y = canvas.height - this.height;
     }
 
     update(direction){
@@ -8,16 +11,16 @@ class Player {
         switch(direction){
             case 'Left':
                 if (this.x === 0){
-                    this.x = 770;
+                    this.x = canvas.width - this.width;
                 } else {
-                    this.x -= 100;
+                    this.x -= this.width;
                 }
                 break; 
             case 'Right':
-                if (this.x === 770){
+                if (this.x >= canvas.width - this.width*2 ){
                     this.x = 0;
                 } else {
-                    this.x += 100;
+                    this.x += this.width;
                 }
                 break;
             default:
@@ -30,9 +33,7 @@ class Player {
     display(){
 
         let image = document.getElementById('player');
-        ctx.drawImage(image, this.x, 710, 130, 200)
-        // ctx.fillStyle = 'black';
-        // ctx.fillRect(this.x, 875, 100, 25);
+        ctx.drawImage(image, this.x, this.y, this.width, this.height)
 
     }
 
