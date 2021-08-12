@@ -22,11 +22,11 @@ button {
 
 #modal {
   z-index: 999;
-  position: absolute;
-  left: 25%;
-  top: 10%;
-  width: 50%;
   border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 4%;
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -34,8 +34,8 @@ button {
 
 #modal img {
   padding: 10px;
-  height: 600px;
-  width: 80%;
+  max-height: 80vh;
+  max-width: 900px;
 }
 
 #modal h3 {
@@ -52,33 +52,18 @@ button {
   left: -1%;
 }
 
+#modal p {
+  padding: 1% 7%;
+}
+
 #modal #closeModal:hover {
   background: rgb(124, 126, 124);
 }
 
 #mainSection {
-  margin: auto;
+  text-align: center;
+  margin-top: 10px;
 }
-/* .projectBubble {
-  margin-top: 5%;
-  width: 30vh;
-  height: 30vh;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 4%;
-  overflow: hidden;
-}
-
-.projectBubble img {
-  height: 100%;
-  width: 100%;
-}
-
-.project {
-  width: 30vh;
-  margin-top: 5%;
-  display: inline-block;
-  margin-right: 2%;
-} */
 
 .card-img-top {
   height: 30vh;
@@ -86,8 +71,6 @@ button {
 
 .card {
   display: inline-block;
-  margin-left: 10%;
-  margin-top: 30px;
 }
 
 .ctxImg {
@@ -124,11 +107,15 @@ button {
 }
 
 #toggleButton {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 #start {
   position: absolute;
   top: 40%;
+}
+
+.modalIcon {
+  height: 40px;
+  width: 40px;
 }

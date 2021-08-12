@@ -10,7 +10,7 @@ class Player {
 
         switch(direction){
             case 'Left':
-                if (this.x === 0){
+                if (this.x <= 0){
                     this.x = canvas.width - this.width;
                 } else {
                     this.x -= this.width;

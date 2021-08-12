@@ -11,7 +11,7 @@ class Project {
         let randX = Math.floor(Math.random() * (canvas.width - this.size));
         let randY = Math.floor(Math.random() * 160 + 100);
         let randSpeed = Math.floor(Math.random() * 10 + 4);
-        let imgArr = ['habit','snake','bookingSystem', 'journalism', 'sudoku'];
+        let imgArr = ['habit','snake','bookingSystem', 'journalism', 'sudoku', 'sort'];
         let randIndex = Math.floor(Math.random() * imgArr.length);
         this.img = imgArr[randIndex];
         this.x = randX;
