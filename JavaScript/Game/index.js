@@ -9,14 +9,13 @@ modalReplayBtn.addEventListener('click', () => {
 });
 let player;
 let project;
+let projectNumber = 6;
 let speed = 15;
-
-
 
 const drawGame = () => {
 
     let projectSet = [];
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i < projectNumber; i++){
         project = new Project()
         project.assign()
         projectSet.push(project);
@@ -33,7 +32,7 @@ const drawGame = () => {
         for (let i = 0; i < projectSet.length; i++){
             projectSet[i].display();
             projectSet[i].update();
-            if (projectSet[i].y > 820){
+            if (projectSet[i].y > (canvas.height - projectSet[i].size)){
                 projectSet[i].assign();
             }
             if (checkCollision(player, projectSet[i])){
@@ -53,10 +52,10 @@ const drawGame = () => {
 }
 
 const checkCollision = (player, project) => {
-    let playerMaxX = player.x + 130;
-    let projectMaxX = project.x + 80;
+    let playerMaxX = player.x + player.width;
+    let projectMaxX = project.x + project.size;
     if ((project.x >= player.x && project.x <= playerMaxX) || (projectMaxX <= playerMaxX && projectMaxX >= player.x)){
-        if (project.y > 690){
+        if (project.y + project.size - 10 > (player.y)){
             return true
         } else {
             return false
@@ -69,7 +68,14 @@ const checkCollision = (player, project) => {
 const displayModal = (word) => {
     let modal = document.getElementById('gameModal');
     modal.style.display = "block";
-    console.log(word);
+    let existingH3 = document.querySelector('#gameModal h3');
+    if (existingH3){
+        existingH3.textContent = `You got hit by the ${word} project..`
+    } else {
+        let h3 = document.createElement('h3');
+        h3.textContent = `You got hit by the ${word} project..`
+        modal.append(h3);
+    }
 }
 
 
@@ -80,5 +86,9 @@ window.addEventListener('keydown', (e) => {
 })
 
 // drawGame();
+const startDiv = document.getElementById('start');
 const startButton = document.getElementById('gameStart');
-startButton.addEventListener('click', drawGame);
+startButton.addEventListener('click', () => {
+    startDiv.style.display = "none";
+    drawGame()
+});

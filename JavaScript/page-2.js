@@ -1,9 +1,26 @@
-let revealGameButton = document.getElementById('revealCanvas');
-revealGameButton.addEventListener('click', () => {
-    let main = document.getElementById('mainSection')
-    main.style.display = "none";
+let toggleGameButton = document.getElementById('revealCanvas');
+toggleGameButton.addEventListener('click', () => {
+    let main = document.getElementById('mainSection');
     let game = document.getElementById('gameSection');
-    game.style.display = "block"
+    let canvas = document.getElementById('game');
+    let width = Math.floor(window.innerWidth*0.42);
+    let height = window.innerHeight;
+    if (window.innerHeight*1.1 > width){
+        height = width;
+    } else {
+        height = width;
+    }
+    canvas.height = height;
+    canvas.width = width;
+    if (!game.style.display || game.style.display === "none"){
+        main.style.display = "none";
+        game.style.display = "flex";
+        toggleGameButton.textContent = "Return to normality.."
+    } else {
+        main.style.display = "block";
+        game.style.display = "none";
+        toggleGameButton.textContent = "Spice things up.."
+    }
     
 })
 

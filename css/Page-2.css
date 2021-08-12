@@ -83,15 +83,35 @@ h3 {
 
 #gameModal {
   position: absolute;
-  top: 40vh;
-  left: 30vw;
+  top: 45%;
   display: none;
+  text-align: center;
 }
 
 #gameModal h1 {
   color: red;
 }
 
+#gameModal h3 {
+  margin-top: 2%;
+}
+
 #gameSection {
   display: none;
+  justify-content: center;
+}
+
+#game {
+  margin-top: 2%;
+  border: 3px solid black;
+}
+
+#toggleButton {
+  display: flex;
+  justify-content: center;
+}
+
+#start {
+  position: absolute;
+  top: 45%;
 }

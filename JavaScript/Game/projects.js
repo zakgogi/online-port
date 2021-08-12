@@ -1,10 +1,10 @@
 class Project {
     constructor(){
-        this.x = 0;
-        this.y = 80;
         this.img = "";
         this.fallSpeed = 10;
         this.size = Math.floor(canvas.width/10);
+        this.x = 0;
+        this.y = 0;
     }
     
     assign(){
@@ -16,7 +16,7 @@ class Project {
         this.img = imgArr[randIndex];
         this.x = randX;
         this.y = -randY;
-        this.fallSpeed = randSpeed
+        this.fallSpeed = randSpeed;
     }
 
     display(){
