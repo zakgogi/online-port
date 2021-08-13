@@ -153,3 +153,13 @@ button {
     max-height: 50vh;
   }
 }
+
+@media only screen and (max-height: 1000px) {
+  #modal {
+    top: 56%;
+  }
+
+  #modal img {
+    max-height: 50vh;
+  }
+}
