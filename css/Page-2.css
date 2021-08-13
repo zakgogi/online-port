@@ -13,6 +13,7 @@ nav {
 h1,
 p,
 h3,
+h4,
 button {
   font-family: "Ubuntu", sans-serif;
 }
@@ -27,7 +28,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   border-radius: 4%;
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -39,8 +40,18 @@ button {
   max-width: 900px;
 }
 
-#modal h3 {
+#modal h3,
+h4 {
   padding: 5px;
+}
+
+#modal h4 {
+  font-size: 1.9vh;
+}
+
+#modal h3 {
+  font-size: 3vh;
+  font-weight: 600;
 }
 
 #modal #closeModal {
@@ -55,6 +66,7 @@ button {
 
 #modal p {
   padding: 1% 7%;
+  font-size: 1.8vh;
 }
 
 #modal #closeModal:hover {
