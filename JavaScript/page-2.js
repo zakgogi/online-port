@@ -109,7 +109,7 @@ function fillModal(project){
         modalInfoSection.append(img);
     }
     if (githubLink !== ""){
-        githubIcon.src = "./Assets/github.png";
+        githubIcon.src = "./Assets/projectIcons/github.png";
         githubIcon.classList.add('modalIcon');
         githubIcon.addEventListener("click", () => {
             window.location.assign(githubLink)
@@ -117,7 +117,7 @@ function fillModal(project){
         linkDiv.append(githubIcon);
     }
     if (externalLink !== ""){
-        externalIcon.src = "./Assets/externalLink.png";
+        externalIcon.src = "./Assets/projectIcons/externalLink.png";
         externalIcon.classList.add('modalIcon');
         externalIcon.addEventListener("click", () => {
             window.location.assign(externalLink);
