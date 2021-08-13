@@ -21,10 +21,9 @@ const drawGame = () => {
         project.assign()
         projectSet.push(project);
     }
-    // project = new Project();
+
     player = new Player();
     scoreboard = new Scoreboard();
-    // project.assign();
     
     const gameLoop = window.setInterval(() => {
         
@@ -111,10 +110,11 @@ window.addEventListener('keydown', (e) => {
     player.update(direction);
 })
 
-// drawGame();
 const startDiv = document.getElementById('start');
 const startButton = document.getElementById('gameStart');
+const startPara = document.getElementById('startParaSection');
 startButton.addEventListener('click', () => {
     startDiv.style.display = "none";
+    startPara.style.display = "none";
     drawGame()
 });

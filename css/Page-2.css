@@ -6,8 +6,9 @@ button:hover {
   background-color: gray;
 }
 
-/* #mainSection {
-} */
+nav {
+  padding-left: 2%;
+}
 
 h1,
 p,
@@ -34,7 +35,7 @@ button {
 
 #modal img {
   padding: 10px;
-  max-height: 80vh;
+  max-height: 58vh;
   max-width: 900px;
 }
 
@@ -71,6 +72,12 @@ button {
 
 .card {
   display: inline-block;
+  margin: 1%;
+  border: 2px solid black;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .ctxImg {
@@ -113,7 +120,23 @@ button {
 
 #start {
   position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   top: 40%;
+}
+
+#startParaSection {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: 45%;
+}
+
+#startPara {
+  width: 30%;
+  font-size: 1.8vh;
 }
 
 .modalIcon {
@@ -127,6 +150,6 @@ button {
   }
 
   #modal img {
-    max-height: 70vh;
+    max-height: 50vh;
   }
 }

@@ -81,7 +81,7 @@ function fillModal(project){
             break;
         case 'journalism':
             h3.textContent = "Journalism Project"
-            para.textContent = "During a Futureproof group project, we created a website that would allow users to input short posts about a topic they are interested in, as well as connecting the site to a gif API so that users can add gifs to a post. Instead of using a database we just used a json file in the backend that is written to when a post request occurs. This server side repository is deployed using heroku. "
+            para.textContent = "During a Futureproof group project, we created a website that would allow users to input short posts about a topic they are interested in, as well as connecting the site to a gif API so that users can add gifs to a post. Instead of using a database we just used a json file in the backend that is written to when a post request occurs. This server side repository is deployed using heroku. From the Github link above there's a link to the server repo in the Readme to check that out."
             img.src = "./Assets/journalism.png";
             githubLink = "https://github.com/zakgogi/journalism-lap-1-client";
             externalLink = "https://sazjournalismproject.netlify.app/";
@@ -95,19 +95,22 @@ function fillModal(project){
             break;
         case 'snake':
             h3.textContent = "Snake in JavaScript"
-            para.textContent = "Created the classic snake game in a web application using HTML canvas. I also deployed a Postgres SQL database using heroku to record high scores."
+            para.textContent = "Created the classic snake game in a web application using HTML canvas and pure JavaScript, one of my personal JavaScript projects. After lap 2 of the Futureproof course, I also deployed a Postgres SQL database using heroku to record high scores."
             img.src = "./Assets/snake screenshot.png";
+            githubLink = "https://github.com/zakgogi/snake-db";
+            externalLink = "https://zaksnakejs.netlify.app/";
             break;
         case 'habit':
             h3.textContent = "Stride - Habit Tracking App";
-            para.textContent = "Loading..."
+            para.textContent = "In my second project at futureproof we created an application where you could add and track your day to day habits. For this project we implemented an authentication process where usernames, emails and encrypted passwords were stored in a Heroku Postgres database, as well as using Json Web Tokens on login. I added some other features, like the ability to send an email reminder using the SendGrid API, as well as using Heroku scheduler to run a function daily at midnight to reset habit streaks and reset daily times completed back to 0. From the Github link above there's a link to the client repo in the Readme to check that out. If you want to test the application but don't want to sign up, we have a seeded account - (username: Steven Ride, password: stride)."
             img.src = "./Assets/stride.png"
             githubLink = "https://github.com/The-Br0grammer/server";
             externalLink = "https://the-stride.netlify.app/profile/";
             break;
         case 'sort': 
             h3.textContent = "React Sorting Visualizer"
-            para.textContent = "Loading..."
+            para.textContent = "Created an application with react to visualize sorting algorithms. The array thats being sorted is being stored as the change of state on each pass of the chosen sorting algorithm. I also added a range value slider to be able to adjust the speed of the sorting process. This project is ongoing..."
+            img.src = "./Assets/sorting.png";
             githubLink = "https://github.com/zakgogi/sorting-visualizer";
             externalLink = "https://zak-sorting-visualizer.netlify.app/";    
             break ;

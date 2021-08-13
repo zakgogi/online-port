@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/Page-2.css">
+    <link rel="stylesheet" href="./css/all.css">
     <script defer src="./JavaScript/page-2.js"></script>
     <script defer src="./JavaScript/page-2-animation.js"></script>
     <title>Projects</title>
@@ -102,59 +103,8 @@
               <h5 class="card-title">React Sorting Visualizer</h5>
             </div>
         </div>
-
-
-
-        <!-- <section id="topProjects" class="text-center">
-            <div class="project">
-                <h4>Booking System</h4>
-                <div id="bookingImg" class="projectBubble">
-                    <img src="./Assets/bookingscreenshot.png"> 
-                </div>
-            </div>
-            <div class="project">
-                <div id="journalismImg" class="projectBubble">
-                    <img src="./Assets/journalism.png"> 
-                    <h4>Journalism Project</h4>
-                </div>
-            </div>
-            <div class="project">
-                <div id="snakeImg" class="projectBubble">
-                    <img src="./Assets/snake screenshot.png"> 
-                    <h4>JavaScript Snake</h4>
-                </div>
-            </div>
-        </section> -->
-        <!-- <h1 class="animate__animated animate__fadeInUp">Projects</h1>
-        <h2 class="mt-5 animate__animated animate__fadeInUp">JavaScript</h2>
-        <h3 class="mt-5 animate__animated animate__fadeInUp">Journalism Website</h3>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            During a Futureproof group project, we created a website that would allow users to input short posts about a topic they are interested in, as well as connecting the site to a gif API so that users can add gifs to a post. Instead of using a database we just used a json file in the backend that is written to when a post request occurs. This server side repository is deployed using heroku. 
-        </p>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            Check it out <a href="https://sazjournalismproject.netlify.app/">Here</a>
-
-        </p>
-        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/journalism.png" width="80%" >
-        <h3 class="mt-5 animate__animated animate__fadeInUp">Booking System for local field</h3>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            Created a booking system for a local field, using the Materialize framework and Google Suite to create a form that's integrated with a Google calendar and Google sheets 'database'. The form has complete validation, checking whether there is already a booking on a specific date and pitch before populating available times. Customer information is autofilled from the Google Sheets database. The user is able to add multiple pitches onto one booking, as well as press a repeat button to repeat a given booking across multiple weeks. 
-        </p>
-        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/bookingscreenshot.png" width=100%>
-        <h3 class="mt-5 animate__animated animate__fadeInUp">Snake Game</h3>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            Created the classic snake game in a web application using HTML canvas. I also deployed a Postgres SQL database using heroku to record high scores. 
-        </p>
-        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/snake screenshot.png">
-        <h3 class="mt-5 animate__animated animate__fadeInUp">Sudoku generator and solver</h3>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            Created the classic sudoku game, starting from solving a given input sudoku and then removing different amounts of numbers to make the generated sudoku harder or easier to solve. Added logic to check whether the users input is correct after submitting their solution, and if they are incorrect allow the user to ask where their input is incorrect to have another go at solving the given puzzle. 
-        </p>
-        <p class="mt-4 animate__animated animate__fadeInUp">
-            Check it out <a href="https://zaksudoku.netlify.app/">here</a>
-        </p>
-        <img class="mt-1 animate__animated animate__fadeInUp" src="Assets/dokuscreenshot.png"> -->
     </main>
+    
     <section class="hidden text-center" id="modal" >
         <button id="closeModal">x</button>
         <div id="modalInfo">
@@ -164,6 +114,9 @@
     <section id="gameSection">
         <div id="start">
             <button id="gameStart">Start</button>
+        </div>
+        <div id="startParaSection">
+            <p id="startPara">Use the left and right arrow keys to avoid the falling projects as long as you can! If you get hit by one, you'll be able to check out the project that hit you on the game over screen. Enjoy!</p>
         </div>
         <div>
             <canvas id = "game"> </canvas>
