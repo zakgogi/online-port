@@ -25,37 +25,20 @@ toggleGameButton.addEventListener('click', () => {
     
 })
 
-
-let bookingBubble = document.getElementById('bookingImg');
-let journalismBubble = document.getElementById('journalismImg');
-let snakeBubble = document.getElementById('snakeImg');
-let sudokuBubble = document.getElementById('sudokuImg');
-let habitBubble = document.getElementById('habitImg');
-let sortBubble = document.getElementById('sortImg');
 let modal = document.getElementById('modal');
 let modalInfoSection = document.getElementById('modalInfo');
 let modalCloseBtn = document.getElementById('closeModal');
 
 modalCloseBtn.addEventListener('click', toggleModalOff);
 
-bookingBubble.addEventListener('click', () => {
-    fillModal('bookingSystem')
-})
-journalismBubble.addEventListener('click', () => {
-    fillModal('journalism');
-})
-snakeBubble.addEventListener('click', () => {
-    fillModal('snake');
-})
-sudokuBubble.addEventListener('click', () => {
-    fillModal('sudoku');
-})
-habitBubble.addEventListener('click', () => {
-    fillModal('habit');
-})
-sortBubble.addEventListener('click', () => {
-    fillModal('sort');
-})
+let projectList = ['bookingSystem', 'journalism', 'snake', 'sudoku', 'habit', 'sort', 'portfolio'];
+for (let i = 0; i < projectList.length; i++){
+    let currentBubble = document.getElementById(`${projectList[i]}Img`);
+    currentBubble.addEventListener('click', () => {
+        fillModal(projectList[i]);
+    })
+}
+
 
 function toggleModalOff(){
     modal.style.display = "none";
@@ -114,6 +97,9 @@ function fillModal(project){
             githubLink = "https://github.com/zakgogi/sorting-visualizer";
             externalLink = "https://zak-sorting-visualizer.netlify.app/";    
             break ;
+        case 'portfolio':
+            h3.textContent = "This Portfolio Website"
+            break;
     }
     modalInfoSection.append(h3);
     if (img.src !== ""){
